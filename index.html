@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>泓晏科技面試題</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- header  -->
+        <header class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="./切版素材/header/LOGO.png" alt="LOGO">
+                </a>
+            </div>
+            <div class="Loggin">
+                <button id="LogBtn" onclick="Login()">登入</button>
+                <!-- 漢堡 -->
+                <img src="./切版素材/icon_menu.svg" alt="漢堡" class="hub">
+            </div>
+
+        </header>
+        <!-- 漢堡選單 -->
+        <div id="items">
+            <div class="Log">
+                <p id="UserName"></p>
+                <p id="Money"></p>
+                <img src="./切版素材/footer/bg_topline.png" alt="底線">
+                <div class="Fun-List">
+                    <p>出納櫃台</p>
+                    <p>修改密碼</p>
+                    <p>遊戲介紹</p>
+                    <p>聯繫我們</p>
+                </div>
+
+            </div>
+            <button class="Signout" onclick="Login()">未登入</button>
+        </div>
+        <div id="Info">
+            <p id="InfoUName"></p>
+            <img src="切版素材/footer/line.png" alt="分隔線" class="li1">
+            <p id="InfoUMoney"></p>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <p>🔈公告:幸運轉輪活動開啟公告看這裡!</p>
+
+            <ul>
+                <li><a href="javacsript:;"><img src="./切版素材/banner/banner01.jpg" alt=""></a></li>
+                <li><a href="javacsript:;"><img src="./切版素材/banner/banner02.jpg" alt=""></a></li>
+                <li><a href="javacsript:;"><img src="./切版素材/banner/banner03.jpg" alt=""></a></li>
+                <li><a href="javacsript:;"><img src="./切版素材/banner/banner04.jpg" alt=""></a></li>
+                <li><a href="javacsript:;"><img src="./切版素材/banner/banner05.jpg" alt=""></a></li>
+            </ul>
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+            <div class="gd"></div>
+        </div>
+        <!-- 獎金總和？ -->
+        <div class="Money-Total">
+            <div class="Total-1">
+                <span>EGP JP</span>
+                <span>1091179.57</span>
+            </div>
+            <img src="切版素材/header/jp_bg.jpg" alt="分隔線" class="line">
+            <div class="Total-2">
+                <span>15輪 JP</span>
+                <span>109119.757</span>
+            </div>
+        </div>
+        <div class="Content">
+            <div class="Ranking">
+                <img src="./切版素材/button/icon_leaderboard.png" alt="排行榜">
+                <button data-text="老虎機" class="check">
+                    <img src="./切版素材/button/icon_slotgame.png" alt="老虎機">
+                </button>
+                <img src="切版素材/footer/line.png" alt="分隔線">
+                <button data-text="百家樂" class="check">
+                    <img src="./切版素材/button/icon_r220.png" alt="百家樂">
+                </button>
+                <img src="切版素材/footer/line.png" alt="分隔線">
+                <button data-text="15輪" class="check">
+                    <img src="./切版素材/button/icon_15w.png" alt="15輪">
+                </button>
+
+            </div>
+            <div class="Game">
+                <input type="button" class="GameButton G1 check" data-name="實體機台">
+                <input type="button" class="GameButton G2 check" data-name="視訊直播">
+                <input type="button" class="GameButton G3 check" data-name="電子遊戲">
+                <input type="button" class="GameButton G4 check" data-name="體育賽事">
+                <input type="button" class="GameButton G5 check" data-name="電子競技">
+                <input type="button" class="GameButton G6 check" data-name="樂透彩票">
+                <input type="button" class="GameButton G7 check">
+                <input type="button" class="GameButton G8 check">
+                <input type="button" class="GameButton G9 check">
+            </div>
+        </div>
+
+        <div id="LogginTip">
+            <p class="TipText">請先登入</p>
+        </div>
+
+        <div class="footer">
+            <button onclick="Echo('跳轉優惠活動頁')">優惠活動</button>
+            <button onclick="Echo('跳轉會員中心頁')">會員中心</button>
+            <button onclick="Echo('跳轉線上客服頁')">線上客服</button>
+        </div>
+        
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/banner.js"></script>
+</body>
+
+</html>

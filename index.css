@@ -1,0 +1,486 @@
+/* 整體 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 768px;
+    margin: auto;
+    position: relative;
+}
+
+/* header */
+
+.header {
+    background: url(./切版素材/header/header_bg.jpg) no-repeat 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* LOGO */
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
+    vertical-align: middle;
+    margin: 10px 30px;
+}
+
+.Loggin {
+    margin: auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loggin button {
+    width: 100px;
+    margin: auto 20px;
+    background-color: rgb(22, 58, 136);
+    border: none;
+    border-radius: 10px;
+    color: #ccc;
+    height: 30px;
+}
+
+.hub {
+    width: 30px;
+    height: 30px;
+    user-select: none;
+}
+
+.hub:hover {
+    cursor: pointer;
+}
+
+
+#items {
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(11, 11, 11, .9);
+    position: fixed;
+    right: 0;
+    z-index: -3;
+    color: white;
+    display: none;
+}
+
+.Log {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.Log img {
+    width: 100%;
+}
+
+.Log p {
+    font-weight: 600;
+    user-select: none;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.Fun-List {
+    display: none;
+}
+
+.Fun-List p:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.Signout {
+    border: none;
+    color: #ccc;
+    background-color: rgb(22, 58, 136);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#UserName {
+    font-weight: 600;
+    margin: 50px auto 10px;
+    user-select: none;
+}
+
+/* 使用者資訊 */
+
+#Info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    background: radial-gradient(circle at center, rgb(22, 58, 136), rgb(7, 4, 36, .95));
+    display: none;
+}
+
+#Info p {
+    display: inline-block;
+    width: 50%;
+    color: #ccc;
+    font-size: 30px;
+    margin: auto 50px;
+    font-weight: 600;
+}
+
+#Info p:nth-of-type(2) {
+    color: #D3B50C;
+}
+
+/* banner */
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    height: 300px;
+}
+
+
+.banner ul {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.banner ul li {
+    float: left;
+}
+
+
+.banner .prev,
+.banner .next {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 17.5px;
+    top: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.prev:hover , .next:hover{
+    cursor: pointer;
+}
+
+.banner .prev {
+    left: 0;
+    transform: translate(-50%, -50%);
+    text-indent: 28px;
+}
+
+.banner .next {
+    right: 0;
+    transform: translate(50%, -50%);
+    text-indent: 8px;
+}
+
+.banner .prev:hover,
+.banner .next:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.banner .gd {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -36.5px;
+    display: flex;
+    justify-content: space-around;
+    width: 75px;
+    height: 15px;
+}
+
+.banner .gd i {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 2.5px;
+    background-color: azure;
+}
+.banner .gd i:hover{
+    cursor: pointer;
+}
+
+.current {
+    background-color: blue !important;
+    border-radius: 4.5px !important;
+    box-shadow:0px 0px 3px 1px white !important;
+}
+
+.banner img {
+    vertical-align: top;
+    user-select: none;
+}
+
+.banner>p:first-child {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: rgba(11, 11, 11, .5);
+    user-select: none;
+    width: 100%;
+    z-index: 3;
+}
+
+
+
+
+
+/* 獎金總和？ */
+
+.Money-Total {
+    background-image: url(./切版素材/footer/jp_bg.jpg);
+    display: flex;
+    justify-content: space-around;
+}
+
+.Money-Total>div {
+    width: 80%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Money-Total>div>span {
+    color: rgb(66, 33, 12);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+.Money-Total img {
+    mix-blend-mode: color-burn;
+    margin: 0px 20px;
+}
+
+.Money-Total>div>span:first-child {
+    color: rgb(146, 125, 56);
+}
+
+/* 內容 */
+
+/* 排行榜 */
+.Ranking {
+    background-color: rgb(3, 1, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ranking>img:first-child {
+    margin: 20px;
+}
+
+.Ranking button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.Ranking button:hover {
+    cursor: pointer;
+}
+
+.Ranking button::after {
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* 遊戲 */
+
+.Game {
+    background: url('切版素材/layout/bg_index.jpg') 100% 100%;
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.GameButton {
+    border: none;
+    background-color: transparent;
+    background: 100% 100%;
+    width: 230px;
+    height: 230px;
+    margin: 20px auto;
+}
+
+.GameButton:hover {
+    cursor: pointer;
+}
+
+/* 遊戲圖片 & 點擊後 */
+
+/* 實體機台 */
+.G1 {
+    background-image: url(./切版素材/game/mechine.png);
+    position: relative;
+}
+
+.G1:active {
+    background-image: url(./切版素材/game/mechine-on.png);
+}
+
+/* 視訊直播 */
+.G2 {
+    background-image: url(./切版素材/game/live.png);
+}
+
+.G2:active {
+    background-image: url(./切版素材/game/live-on.png);
+}
+
+/* 電子遊戲 */
+.G3 {
+    background-image: url(./切版素材/game/electronic.png);
+}
+
+.G3:active {
+    background-image: url(./切版素材/game/electronic-on.png);
+}
+
+/* 體育賽事 */
+.G4 {
+    background-image: url(./切版素材/game/sports.png);
+}
+
+.G4:active {
+    background-image: url(./切版素材/game/sports-on.png);
+}
+
+/* 電子競技 */
+.G5 {
+    background-image: url(./切版素材/game/esports.png);
+}
+
+.G5:active {
+    background-image: url(./切版素材/game/esports-on.png);
+}
+
+/* 樂透彩票 */
+.G6 {
+    background-image: url(./切版素材/game/lottory.png);
+}
+
+.G6:active {
+    background-image: url(./切版素材/game/lottory-on.png);
+}
+
+/* 卡牌效應 */
+.G7 {
+    background-image: url(./切版素材/game/card-effect.png);
+}
+
+.G7:active {
+    background-image: url(./切版素材/game/card-effect-on.png);
+}
+
+
+/* 魚圖標 */
+.G8 {
+    background-image: url(./切版素材/game/fish_icon.png);
+}
+
+.G8:active {
+    background-image: url(./切版素材/game/fish_icon-on.png);
+}
+
+
+/* 魚 */
+.G9 {
+    background-image: url(./切版素材/game/fish.png);
+}
+
+.G9:active {
+    background-image: url(./切版素材/game/fish-on.png);
+}
+
+
+/* footer */
+
+.footer {
+    width: 768px;
+    background-image: url(./切版素材/footer/footer_bg.jpg);
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer button {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    margin: 30px 20px;
+}
+
+.footer button:hover {
+    cursor: pointer;
+}
+
+/* 登入提示框 */
+
+#LogginTip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(11, 11, 11, .95);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+    z-index: 5;
+}
+
+.TipText {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
